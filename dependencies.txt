@@ -1,0 +1,15 @@
+#useful web tutorial
+#http://lazyfoo.net/tutorials/SDL/
+
+#List of dependenices
+
+#libsdl2 		flag: -lSDL2 			header: <SDL2/SDL.h>
+#libsdl2-image  flag: -lSDL2_image		header: <SDL2/SDL_image.h>
+#libsdl2-ttf	flag: -lSDL2_ttf		header: <SDL2/SDL_ttf.h>
+#libm 	 		flag: -lm    			header: <math.h>
+
+#current build command
+#gcc main.c -o a.out -lSDL2
+#gcc main.c util.c -o a.out -lSDL2 -lm
+#gcc main.c util.c grid.c menu.c -o a.out -lSDL2 -lSDL2_image -lSDL2_ttf -lm
+gcc main.c util.c grid.c menu.c platform_player.c tetris_player.c -o a.out -lSDL2 -lSDL2_image -lSDL2_ttf -lm
